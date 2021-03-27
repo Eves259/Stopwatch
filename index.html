@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <br><br>
+
+    <div class="stopwatch">
+    <h1 id="heading">Dancing Stopwatch</h1><br><br>
+    <div class="display"><h1 id="time">00:00:00</h1></div>
+    <div class="buttons">
+    <button id="button1">Start</button><button id="button1-stop">Stop</button>
+    <button id="songName" disabled>Something</button>
+    <button id="button2">Lap</button>
+    <button id="button-clear">Clear</button>
+    </div>
+    <div class="display"><h1 id="savedTime">00:00:00</h1></div>
+    </div>
+
+    <br><br>
+
+    <button id="soundButton" onclick="activateSound()">Activate Groover</button>
+
+<audio controls id="Groover">
+<source src="audio/Groover.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src='js/script.js'></script>
+</body>
+</html>

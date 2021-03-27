@@ -1,0 +1,319 @@
+$background-color: #3429ff;
+
+* {
+    font-family: font;
+}
+
+body {
+    margin: 0;
+    background-color: $background-color;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%233429ff' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%232f23e2' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232a1dc6' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%232417ab' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231e1191' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23180c77' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.stopwatch {
+    display: block;
+    width: 45rem;
+    height: 45rem;
+    background-color: rgb(248, 130, 20);
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: .3rem solid rgb(22, 127, 247);
+    box-shadow: white 0rem 0rem 8rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#heading {
+    display: block;
+    margin: auto;
+    font-size: 5rem;
+    background-color: #5c67c7;
+    border-radius: 25%;
+    border: solid white .3rem;
+    width: 35rem;
+}
+
+#songName {
+    background-color: black;
+    color: rgb(223, 223, 14);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#time {
+    font-size: 5rem;
+    background-color: #5c67c7;
+    border-radius: 25%;
+    border: solid white .3rem;
+    width: 39rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#savedTime {
+    font-size: 5rem;
+    background-color: #5c67c7;
+    border-radius: 25%;
+    border: solid white .3rem;
+    width: 39rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#soundButton {
+    display: block;
+    font-size: 3rem;
+    background-color: rgb(22, 127, 247);
+    border-radius: 25%;
+    border: solid white .3rem;
+    width: 20rem;
+    color: rgb(248, 130, 20);
+    margin: auto;
+    outline: none;
+    box-shadow: white 0rem 0rem 8rem;
+}
+
+#Groover {
+    width: 0;
+    display: none;
+}
+
+.stopwatch
+.buttons
+#button1 {
+    background-color: black;
+    color: rgb(22, 127, 247);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        font-size: 4.2rem;
+    }
+}
+
+.stopwatch
+.buttons
+#button2 {
+    background-color: black;
+    color: rgb(22, 197, 22);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        font-size: 4.2rem;
+    }
+}
+
+.stopwatch
+.buttons
+#button1-stop {
+    display: none;
+}
+
+.stopwatch
+.buttons
+#button-clear {
+    display: none;
+}
+
+.startSwitch
+.stopwatch
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.startSwitch
+.stopwatch
+.buttons
+#button1 {
+    display: none;
+}
+
+.startSwitch
+.stopwatch
+.buttons
+#songName {
+    display: none;
+}
+
+
+.startSwitch
+.stopwatch
+.buttons
+#button1-stop {
+    display: block;
+    background-color: black;
+    color: rgb(247, 22, 22);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        font-size: 4.2rem;
+    }
+}
+
+.startSwitch
+.stopwatch
+.buttons
+#button2 {
+    background-color: black;
+    color: rgb(22, 197, 22);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        font-size: 4.2rem;
+    }
+}
+
+.startSwitch
+.stopwatch
+.buttons
+#button-clear {
+    display: block;
+    background-color: black;
+    color: rgb(248, 130, 20);
+    outline: none;
+    border: solid white .1rem;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        font-size: 4.2rem;
+    }
+}
+
+@font-face {
+    src: url('../fonts/pocket_calcuatlor_tt.ttf');
+    font-family: font;
+}
+
+@keyframes dance{
+    0% {
+        transform: translate(.4rem, .4rem) rotate(0deg);
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+    10% {
+        transform: translate(-.4rem, -.5rem);
+        border: .3rem solid rgb(247, 22, 22);
+        background-color: rgb(22, 197, 22);
+    }
+    20% { 
+        transform: translate(-.6rem, 0rem) rotate(1deg); 
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+    30% { 
+        transform: translate(.6rem, .5rem) rotate(0deg); 
+        border: .3rem solid rgb(247, 22, 22);
+        background-color: rgb(22, 197, 22);
+    }
+    40% { 
+        transform: translate(.4rem, -.4rem) rotate(1deg); 
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+    50% { 
+        transform: translate(-.4rem, .5rem) rotate(-1deg); 
+        border: .3rem solid rgb(247, 22, 22);
+        background-color: rgb(22, 197, 22);
+    }
+    60% { 
+        transform: translate(-.4rem, .5rem) rotate(0deg); 
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+    70% { 
+        transform: translate(.4rem, .5rem) rotate(-1deg); 
+        border: .3rem solid rgb(247, 22, 22);
+        background-color: rgb(22, 197, 22);
+    }
+    80% { 
+        transform: translate(-.4rem, -.4rem) rotate(1deg); 
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+    90% { 
+        transform: translate(.4rem, .5rem) rotate(0deg); 
+        border: .3rem solid rgb(247, 22, 22);
+        background-color: rgb(22, 197, 22);
+    }
+    100% { 
+        transform: translate(.4rem, -.5rem) rotate(-1deg);
+        border: .3rem solid rgb(248, 130, 20);
+        background-color: rgb(22, 127, 247);
+    }
+}
+
+.animation {
+    animation-name: dance;
+    animation-iteration-count: infinite;
+    animation-duration: 4.7s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+@keyframes wiggle{
+    0% { 
+        transform: translate(-.4rem, .5rem) rotate(360deg);
+    }
+    10% { 
+        transform: translate(-.4rem, .5rem) rotate(0deg); 
+    }
+    20% { 
+        transform: translate(.4rem, .5rem) rotate(-1deg); 
+    }
+    30% { 
+        transform: translate(-.4rem, -.4rem) rotate(1deg); 
+    }
+    40% { 
+        transform: translate(.4rem, .5rem) rotate(0deg); 
+    }
+    50% { 
+        transform: translate(.4rem, -.5rem) rotate(-1deg);
+    }
+    60% {
+        transform: translate(.4rem, .4rem) rotate(0deg);
+    }
+    70% {
+        transform: translate(-.4rem, -.5rem);
+    }
+    80% { 
+        transform: translate(-.6rem, 0rem) rotate(1deg); 
+    }
+    90% { 
+        transform: translate(.6rem, .5rem) rotate(0deg); 
+    }
+    100% { 
+        transform: translate(.4rem, -.5rem) rotate(-360deg); 
+    }
+}
+
+.animation-2 {
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 4.7s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
